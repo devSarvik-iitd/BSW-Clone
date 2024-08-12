@@ -1,0 +1,737 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Alumni Mentorship | BSW</title>
+  
+
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
+    type="text/javascript"></script>
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+  </style>
+
+  <style type="text/css">
+    html {
+      overflow-y: scroll
+    }
+
+    body {
+      background-color: rgba(68, 215, 182, 0.18) !important;
+    }
+
+    #page-header {
+      z-index: -1;
+      position: absolute;
+      margin-top: 40px;
+    }
+
+    #am-heading {
+      margin-top: 60px;
+      text-align: center !important;
+    }
+
+    @media (max-width: 769px) {
+      #am-heading h1 {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.70);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+        font-size: 50px !important;
+      }
+
+      .quote {
+        font-weight: 300 !important;
+        font-size: 24px !important;
+      }
+    }
+
+    @media (min-width: 769px) {
+      #am-heading h1 {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.70);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.50);
+        font-size: 80px !important;
+      }
+
+      .quote {
+        font-weight: 300 !important;
+        font-size: 30px !important;
+      }
+    }
+
+    #am-why {
+      color: rgba(0, 0, 0, 0.70);
+    }
+
+    #am-how {
+      color: rgba(0, 0, 0, 0.70);
+    }
+
+    #am-reg {
+      color: rgba(0, 0, 0, 0.70);
+    }
+
+    #am-faq {
+      color: rgba(0, 0, 0, 0.70);
+    }
+
+    .steps {
+      background: #FFFFFF;
+      box-shadow: 2px 2px 26px 10px rgba(0, 0, 0, 0.08), inset 0 0 9px 8px rgba(152, 152, 152, 0.05);
+      border-radius: 30px;
+      padding: 20px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 769px) {
+      .footer-img {
+        margin-top: -100px;
+      }
+
+      #step12 {
+        text-align: right;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .footer-img {
+        margin-top: -200px;
+      }
+
+      #step12 {
+        margin-top: 20px;
+      }
+    }
+  </style>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <style type="text/css">
+    body {
+      font-family: sans-serif;
+      background-color: #1d1f20;
+    }
+
+    .modal-open {
+      padding: 10px 0;
+      font-weight: 300;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #fff;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-open:before,
+    .modal-open:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      -webkit-transition: width 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: width 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .modal-open:before {
+      width: 100%;
+      background-color: #9d9d9d;
+    }
+
+    .modal-open:after {
+      width: 0;
+      background-color: #505050;
+    }
+
+    .modal-open:hover:after {
+      width: calc(100% + 1px);
+    }
+
+    .modal-box {
+      position: absolute;
+      overflow: hidden;
+      width: 0;
+      height: 2px;
+      color: #fff;
+      background-color: #505050;
+      -webkit-transition: width 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), left 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), height 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), top 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: width 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), left 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), height 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), top 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .modal-box.is-open {
+      -webkit-transition: width 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), left 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), height 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), top 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: width 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), left 400ms 0ms cubic-bezier(0.165, 0.84, 0.44, 1), height 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1), top 400ms 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .modal-box.is-open li {
+      opacity: 1;
+    }
+
+    .modal-box.is-open .modal-close {
+      opacity: 1;
+      -webkit-transition: all 500ms 700ms;
+      transition: all 500ms 700ms;
+    }
+
+    .modal-box ul {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin: 0;
+      padding: 30px;
+      list-style-type: none;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-box li {
+      position: relative;
+      margin: 20px 0;
+      text-align: center;
+      opacity: 0;
+      -webkit-transition: all 200ms;
+      transition: all 200ms;
+    }
+
+    .modal-box a {
+      position: relative;
+      font-weight: 300;
+      text-decoration: none;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    .modal-box a:before,
+    .modal-box a:after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 0;
+      height: 2px;
+      -webkit-transition: width 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: width 400ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .modal-box a:after {
+      width: 0;
+      background-color: #fff;
+    }
+
+    .modal-box a:hover:after {
+      width: 100%;
+    }
+
+    .modal-box.is-open li:nth-child(1) {
+      -webkit-transition: all 500ms 575ms;
+      transition: all 500ms 575ms;
+    }
+
+    .modal-box.is-open li:nth-child(2) {
+      -webkit-transition: all 500ms 650ms;
+      transition: all 500ms 650ms;
+    }
+
+    .modal-box.is-open li:nth-child(3) {
+      -webkit-transition: all 500ms 725ms;
+      transition: all 500ms 725ms;
+    }
+
+    .modal-box.is-open li:nth-child(4) {
+      -webkit-transition: all 500ms 800ms;
+      transition: all 500ms 800ms;
+    }
+
+    .modal-box.is-open li:nth-child(5) {
+      -webkit-transition: all 500ms 875ms;
+      transition: all 500ms 875ms;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      border: 0;
+      outline: none;
+      opacity: 0;
+      background-color: transparent;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    .modal-close:before,
+    .modal-close:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 15px;
+      height: 3px;
+      background-color: #fff;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    .modal-close:after {
+      width: 3px;
+      height: 15px;
+    }
+
+    .visuallyhidden {
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      border: 0;
+    }
+
+    @media (min-width:992px) {
+      #borderedlabel {
+        position: relative;
+        left: 20px;
+      }
+    }
+  </style>
+
+  <html>
+
+  <body>
+
+    <link href="assets/css/main.css" rel="stylesheet">
+    <header id="header" class="header d-flex align-items-center sticky-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center">
+  
+        <a href="/index" class="logo d-flex align-items-center me-auto active">
+          <img src="assets/img/bsw.png" alt="">
+        </a>
+  
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li class="dropdown"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Choosing Your Department</a></li>
+                <li><a href="#">Career & Placements Portal</a></li>
+                <li><a href="https://bsw.iitd.ac.in/question_papers.php" target="_blank">Question Papers</a></li>
+                <li class="dropdown"><a href="#"><span>Internet & Email</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">EMail Configuration</a></li>
+                    <li><a href="#">Internet Setup</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Diary</a></li>
+                <li><a href="#">Booklets</a></li>
+                <li class="dropdown"><a href="#"><span>Medical Facilities</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Health Insurance</a></li>
+                    <li><a href="https://bsw.iitd.ac.in/forms/wheelchair.pdf" target="_blank">Wheelchair Form</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Quick Links</a></li>
+                <li><a href="#">Forms</a></li>
+                <li><a href="#">Emergency Contacts</a></li>
+                <li><a href="#">BSW Loans</a></li>
+                <li><a href="#">Concessional education loan scheme for students with disabilities</a></li>
+                <li><a href="#">Verified POR List</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>What We Do</span> <i
+                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Mentorship</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="/acadmentor">Academic Mentorship</a></li>
+                    <li><a href="/alumniMentorship">Alumni Mentorship</a></li>
+                    <li><a href="#">Language Mentorship</a></li>
+                    <li><a href="https://bsw.iitd.ac.in/mental_health.php" target="_blank">Mental Health Mentorship & Counselling</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#"><span>Operations</span> <i
+                      class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <li><a href="#">Freshers Orientation</a></li>
+                    <li><a href="https://bsw.iitd.ac.in/oae/index.html" target="_blank">OAE</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">SCOOPS</a></li>
+                    <li><a href="/acadmentor">Career Counselling</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Speranza</a></li>
+              </ul>
+            </li>
+  
+            <li><a href="/about">FAQs</a></li>
+            <li><a href="/about">Contact Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+  
+        <a class="btn-getstarted" href="/acadmentor">Counselling Services</a>
+  
+      </div>
+    </header>
+
+    <div id="page-header">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+
+          <div class="col-12">
+            <img src="assets/img/alumni_m.svg" style="width: 100%;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="am-heading">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-9 offset-3 mt-4" style="text-align: center;">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">Alumni Mentorship</h1>
+          </div>
+
+          <div class="col-12 col-md-9 offset-md-3 mb-4 quote" style="text-align: center;">
+            <p class="col-12" style="font-family: Montserrat !important; ">“The mind is not a vessel that needs filling,
+              but wood that needs igniting.” </p>
+            <p class="col-12" style="font-family: Montserrat !important; color: #1155CC; font-weight: 500;">Mestrius
+              Plutarchus</p>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" id="am-why">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12" style="text-align: center;">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">Why do we need this program?</h1>
+            <p style="font-size: 1.2rem">Students after coming to IIT are overwhelmed by the countless opportunities
+              present here and often end up confused or going with the herd. Through this program, we aspire to give the
+              students access to our diverse global alumni network to gain new perspectives and responsibly plan their
+              career trajectories.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container" id="am-how">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">How does this program work?</h1>
+            <p style="font-size: 1.2rem">The ‘Student Alumni Mentorship Program’ aims at establishing one on one
+              connecting platform between students and alumni of IIT Delhi. This would be achieved by :</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+
+          <div class="col-5 steps" id="step12">
+            <div class="container">
+              <div class="row">
+                <div class="col-2"><span
+                    style="padding:5px; padding-left:12px; padding-right:12px; background: tomato; border-radius: 40px; width: 40px; margin: 10px; color: white;">1</span>
+                </div>
+                <div class="col-10 mt-2">
+                  <p>Present IITD students and IITD alumni need to fill our Exhaustive Registration Form</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5 steps ml-4" id="step12" style="text-align: center;">
+            <div class="container">
+              <div class="row">
+                <div class="col-2"><span
+                    style="padding:5px; padding-left:12px; padding-right:12px; background: #ffae42; border-radius: 40px; width: 40px; margin: 10px; color: white;">2</span>
+                </div>
+                <div class="col-10 mt-2 ">
+                  <p>Algorithm driven mapping connects the students and mentors based on their interests and goals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row my-4 justify-content-center">
+
+          <div class="col-10 steps" style="text-align: center;">
+            <div class="container">
+              <div class="row">
+                <div class="col-1"><span
+                    style="padding:5px; padding-left:12px; padding-right:12px; background: mediumaquamarine; border-radius: 40px; width: 40px; margin: 10px; color: white;">3</span>
+                </div>
+                <div class="col-11">
+                  <p>A repository of IITD Alumni’s testimonials are made available to the students who could not be
+                    matched.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container" id="am-why">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">Why choose this program?</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+
+          <div class="col-12 col-md-5 steps my-2" style="text-align: center;">
+            <p>
+            <h1 style="margin-left:50px">For Alumni</h1>One of the key pillars of IITD is it’s versatile alumni network
+            who are always keen to contribute to their alma mater. Being an alumni mentor, you will be guiding and
+            motivating the students who are in the same shoes as you were some years before. You will form personal and
+            meaningful relations with these students and prepare them for the world beyond IIT.</p>
+          </div>
+
+          <div class="col-12 col-md-5 steps ml-md-4 mt-4 mt-md-2" style="text-align: center;">
+            <p>
+            <h1 style="margin-right:50px">For Students</h1>This is a unique opportunity wherein you will have access to
+            the vast alumni network of IITD, who will share their personal life experiences and learnings with you. They
+            will help you gain a better and mature perspective and enrich your college experience. You will not only
+            grow professionally but also personally by forming meaningful relations with these alumni.</p>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="container" id="am-reg">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">How to register?</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+
+          <div class="col-12">
+            <p>
+            <h1>Mentor Registration</h1>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/reg1.svg">
+            <p style="text-align: center;">
+              1. Register/ Log in to <a href="https://iitd.almaconnect.com/mentorship">iitd.almaconnect.com</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-4 mx-2 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/form1.svg">
+            <p style="text-align: center;">
+              2. Fill out our form. Fill out all the details accurately as this response would be used to match you to
+              your mentee
+            </p>
+          </div>
+          <div class="col-12 col-md-4 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/mentor1.svg">
+            <p style="text-align: center;">
+              3. Once we find you a match, we will let you know of your allotted mentees and the portal could also be
+              used to establish meaningful connection. </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-4">
+          <div class="col-12">
+            <p>
+            <h1>Mentee Registration</h1>
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-3 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/reg2.svg" class="my-4">
+            <p style="text-align: center;" class="my-4">
+              1. Register/ Log in to <a href="https://iitd.almaconnect.com/mentorshipp">iitd.almaconnect.com</a>
+            </p>
+          </div>
+          <div class="col-12 col-md-4 mx-2 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/form2.svg">
+            <p style="text-align: center;">
+              2. Fill out our form. Fill out all the details accurately as this response would be used to match you to
+              your mentor </p>
+          </div>
+          <div class="col-12 col-md-4 my-2" style="background: white; border-radius:20px; padding:10px">
+            <img src="assets/img/mentor2.svg">
+            <p style="text-align: center;">
+              3. Once we find you a match, we will let you know of your allotted mentor and the portal could also be
+              used to establish meaningful connection. <br>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+    <div class="container" id="am-faq">
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12" style="text-align: center;">
+            <h1 class="my-4" style="font-family: Montserrat !important; ">Have some more questions? <br> Click here for
+              FAQs.</h1>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+
+    <div class="col-12 footer-img">
+      <img src="assets/img/footer_am.svg" style="width: 100%;">
+    </div>
+
+
+
+    <html>
+
+    <body>
+      <footer id="footer" class="footer position-relative" style="background-color: black;">
+
+        <div class="container footer-top">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">BSW</span>
+              </a>
+              <div class="footer-contact pt-3">
+                <p>Website Created and Maintained by</p>
+                <p><a href="https://www.linkedin.com/in/sarvik-mehta-72267a28a/" target="_blank">Sarvik Mehta</a> and <a
+                    href="https://www.linkedin.com/in/%C3%A3%C3%A0r%C3%A1v-jh%C3%A3-9477142a3/" target="_blank">Aarav
+                    Jha</a></p>
+
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/boardforstudentwelfare" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/bsw_iitd/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><a href="https://bsw.iitd.ac.in/mental_health.php" target="_blank">&#x1F468; YourDOST & SCS</a></li>
+                <li><a href="#">🌐
+                    Emergency Contacts</a></li>
+                <li><a href="https://eacademics.iitd.ac.in/sportal/login" target="_blank">&#x1F516; eAcademics</a></li>
+                <li><a href="https://webmail.iitd.ernet.in/roundcube/" target="_blank">📧
+                    Webmail</a></li>
+                <li><a href="https://moodle.iitd.ac.in/login/index.php" target="_blank">&#x1F4DA; Moodle</a></li>
+                <li><a href="https://ngu.iitd.ac.in/index" target="_blank">&#x1F4CE; NGU</a></li>
+                <li><a href="https://helpline.iitd.ac.in/" target="_blank">&#x1F4F1; IITD Helpline</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12 footer-newsletter">
+              <h4>Feedback</h4>
+              <p>Please give us your suggestions and feedback. <br>Constructive Criticism will be appreciated. <br><a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSfH9UQnHOd54usrBgNCKuuwZy1YnZ6lXjoTSYplPnXXmYXttw/viewform"
+                  target="_blank">Click here</a> for the feedback form</p>
+
+              <h4>BSW Constitution</h4>
+              <p><a href="https://bsw.iitd.ac.in/stuff/Constitution.pdf" target="_blank">Read</a> our Constitution</p>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="container copyright text-center mt-4">
+          <p>© <span>Copyright</span> <strong class="px-1 sitename">BSW 2024</strong> <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            Designed by <a href="https://www.linkedin.com/in/sarvik-mehta-72267a28a/" target="_blank">Ravoit</a> and <a
+              href="https://www.linkedin.com/in/%C3%A3%C3%A0r%C3%A1v-jh%C3%A3-9477142a3/" target="_blank">Phoenix</a>
+          </div>
+        </div>
+
+      </footer>
+
+    </body>
+
+    </html>
